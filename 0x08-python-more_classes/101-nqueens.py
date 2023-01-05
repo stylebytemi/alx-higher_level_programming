@@ -37,7 +37,7 @@ def board_column_gen(board=[]):
     if len(board):
         for row in board:
             row.append(0)
-        else:
+    else:
         for row in range(N):
             board.append([0])
     return board
