@@ -21,4 +21,4 @@ class Student:
             dict: A dictionary of this student's attributes.
         '''
         if '__dict__' in dir(self):
-            return self.__dict_
+            return self.__dict__
