@@ -16,3 +16,4 @@ VALUES (3, 'Bob', 14);
 -- DML query to insert fourth row into the table
 INSERT INTO second_table (id, name, score)
 VALUES (4, 'George', 8);
+
