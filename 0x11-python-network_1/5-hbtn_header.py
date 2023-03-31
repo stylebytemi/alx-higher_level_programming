@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+"""Displays the X-Request-Id header variable of a request to a given URL
+"""
 from requests import get
 from sys import argv
 

@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+"""A script that
+- takes in a URL
+- sends a request to the URL
+- displays the body of the response.
+"""
 from requests import get
 from sys import argv
 

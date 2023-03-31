@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
+"""lists the 10 most recent commits on a given GitHub repository.
+"""
 from requests import get
 from sys import argv
 
