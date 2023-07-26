@@ -1,9 +1,7 @@
 #!/usr/bin/node
 const request = require('request');
 const { argv } = require('process');
-
 const BaseUrl = 'https://swapi-api.hbtn.io/api/films/';
-
 function MakeRequest(url) {
   return new Promise(function (resolve, reject) {
     request(url, (error, response, body) => {
@@ -15,13 +13,11 @@ function MakeRequest(url) {
     });
   });
 }
-
 async function main() {
   if (argv.length < 3) {
     console.error('Please provide the Movie ID as the first argument.');
     process.exit(1);
   }
-
   try {
     const movieId = argv[2];
     const movie = await MakeRequest(BaseUrl + movieId);
@@ -36,5 +32,4 @@ async function main() {
     console.error('Error:', error.message);
   }
 }
-
 main();
